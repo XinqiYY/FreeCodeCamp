@@ -1,6 +1,7 @@
 # Cat Photo App
 
-## `<a>` 标签的 `target` 属性用于指定链接如何在浏览器中打开。`target` 属性定义了链接目标的窗口或框架。
+## `<a>` 标签: 
+`<a>`标签的`target` 属性用于指定链接如何在浏览器中打开。`target` 属性定义了链接目标的窗口或框架。
 `<a href="https://example.com" target="_blank">打开新窗口</a>`
 
 ## `<main>` 标签
