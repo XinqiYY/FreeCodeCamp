@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Cat Photo App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## `<a>` 标签的 `target` 属性用于指定链接如何在浏览器中打开。`target` 属性定义了链接目标的窗口或框架。
+`<a href="https://example.com" target="_blank">打开新窗口</a>`
 
-## Available Scripts
+## `<main>` 标签
+`<main>` 标签用于标识文档的主要内容，即页面的主要区域。一个文档中只应该有一个 `<main>` 标签。它的作用是使搜索引擎、浏览器等用户代理更容易识别页面的主要内容。
 
-In the project directory, you can run:
+## `<section>` 标签：
+`<section>` 标签用于表示文档的一个区块或章节，通常包含一组相关的内容。一个页面可以包含多个 `<section>`。
 
-### `npm start`
+## `<figure>` 标签：
+`<figure>` 元素用于表示文档中的媒体内容，通常与 `<figcaption>` 配合使用，用于为媒体内容提供标题或说明。这对于插入图片、图表、音频、视频等媒体元素时是非常有用的。
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+<figure>
+  <img src="example.jpg" alt="示例图片">
+  <figcaption>这是示例图片的说明</figcaption>
+</figure>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<figure>
+  <video controls>
+    <source src="example.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <figcaption>这是示例视频的说明</figcaption>
+</figure>
+```
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## `<fieldset>` 标签：
+`<fieldset>` 元素是 HTML 中用于将表单的一组相关元素组合在一起的容器。它通常与 `<legend>` 元素结合使用，`<legend>` 用于为 `<fieldset>` 定义标题或说明。
