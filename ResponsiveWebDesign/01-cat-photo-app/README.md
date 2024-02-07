@@ -2,7 +2,8 @@
 
 ## `<a>` 标签: 
 `<a>`标签的`target` 属性用于指定链接如何在浏览器中打开。`target` 属性定义了链接目标的窗口或框架。
-`<a href="https://example.com" target="_blank">打开新窗口</a>`
+
+```<a href="https://example.com" target="_blank">打开新窗口</a>```
 
 ## `<main>` 标签
 `<main>` 标签用于标识文档的主要内容，即页面的主要区域。一个文档中只应该有一个 `<main>` 标签。它的作用是使搜索引擎、浏览器等用户代理更容易识别页面的主要内容。
