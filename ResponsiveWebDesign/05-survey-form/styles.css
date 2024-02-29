@@ -1,0 +1,59 @@
+body {
+    background-image: url("./image.jpg");
+    font-size: 18px;
+    font-family: Tahoma;
+}
+
+h1, p {
+    text-align: center;
+}
+
+h1 {
+    margin: 50px 0 0 0;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+form {
+    width: 80%;
+    background-color:#3b3b4f;
+    padding: 20px 20px;
+    margin: 0 auto;
+    max-width: 700px;
+    min-width: 300px;
+}
+
+label {
+    color: #ffffff;
+    display: block;
+    margin: 1em 1em;
+    font-size: 14px;
+}
+
+input, textarea, select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2.5em;
+    border-radius: 5px;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+.recommend {
+    margin: unset;
+}
+
+.submit {
+    background-color: green;
+    color: white;
+    font-size: 1em;
+    padding: 1em 0;
+    border: none;
+}
