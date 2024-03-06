@@ -236,6 +236,23 @@ export default StatelessComponent;
 ## A stateless component
 on the other hand, is a class that extends `React.Component`, but does not use internal state.
 ```
+class ToDo extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>
+        <h1>Hi</h1>
+      </div>
+    );
+  }
+};
+```
+
+## A stateful component
+is a class component that does maintain its own internal state. 
+```
 import React, { Component } from 'react';
 
 class StatefulComponent extends Component {
@@ -262,8 +279,5 @@ class StatefulComponent extends Component {
 
 export default StatefulComponent;
 ```
-
-## A stateful component
-is a class component that does maintain its own internal state. 
 
 A common pattern is to try to minimize statefulness and to create stateless functional components wherever possible. This helps contain your state management to a specific area of your application. In turn, this improves development and maintenance of your app by making it easier to follow how changes to state affect its behavior.
