@@ -217,6 +217,39 @@ class MyComponent extends React.Component {
 };
 ```
 
+## Lifecycle Method componentWillMount
+React components have several special methods that provide opportunities to perform actions at specific points in the lifecycle of a component. These are called lifecycle methods, or lifecycle hooks, and allow you to catch components at certain points in time. This can be before they are rendered, before they update, before they receive props, before they unmount, and so on. Here is a list of some of the main lifecycle methods: `componentWillMount()` `componentDidMount()` `shouldComponentUpdate()` `componentDidUpdate()` `componentWillUnmount()` 
+
+Note: The `componentWillMount` Lifecycle method will be deprecated in a future version of 16.X and removed in version 17.
+
+### `componentDidMount()`
+This method is called after a component is mounted to the DOM. This method is called after a component is mounted to the DOM. Any calls to `setState()` here will trigger a re-rendering of your component. When you call an API in this method, and set your state with the data that the API returns, it will automatically trigger an update once you receive the data.
+
+## Optimize Re-Renders with `shouldComponentUpdate`
+This method is a useful way to optimize performance.
+The method must return a boolean value that tells React whether or not to update the component. You can compare the current prop (`this.props`) to the next props (`nextProps`) to determine if you need to update or not.
+
+## `Array.filter()`
+```let onlineUsers = users.filter(user => user.online);```
+
+## Render React on the Server with `renderToString()`
+Why rendering on the server may be used in a real world app. 
+- First, without doing this, your React apps would consist of a relatively empty HTML file and a large bundle of JavaScript when it's initially loaded to the browser. This may not be ideal for search engines that are trying to index the content of your pages so people can find you. If you render the initial HTML markup on the server and send this to the client, the initial page load contains all of the page's markup which can be crawled by search engines. 
+- Second, this creates a faster initial page load experience because the rendered HTML is smaller than the JavaScript code of the entire app. React will still be able to recognize your app and manage it after the initial load.
+```
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return <div/>
+  }
+};
+
+// Change code below this line
+ReactDOMServer.renderToString(<App />);
+```
+
 ## A stateless functional component 
 is any function you write which accepts props and returns JSX
 ```
