@@ -13,7 +13,7 @@ class Colorful extends React.Component {
 const styles = {
 	color: 'purple',
 	fontSize: 40,
-	border: '2 solid purple',
+	border: '2px solid purple',
 };
   
 class Colorful extends React.Component {

@@ -1,0 +1,52 @@
+.sudokuSection {
+    text-align: center;
+  }
+  
+  .sudokuWrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+  }
+  
+  .cell {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid black;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border: 3px solid bisque;
+    background-color: bisque;
+  }
+  
+  td {
+    padding: 0;
+  }
+  
+  .buttons {
+    display: flex;
+  }
+  
+  button {
+    margin: 20px 5px;
+    background-color: bisque;
+    padding: 5px 10px;
+    font-size: 1em;
+  }
+  
+  .bBorder {
+    border-bottom: 2px solid black;
+  }
+  
+  .rBorder {
+    border-right: 2px solid black;
+  }

@@ -1,0 +1,37 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .cel, .fah {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    text-align: center;
+  }
+  
+  input {
+    /* padding: 20px; */
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    padding: 18px 0;
+  }
+  
+  p {
+    padding: 7px;
+    margin: 0px;
+    background-color: lightgray;
+    font-size: 20px;
+  }
+  
+  button {
+    margin: 20px;
+    padding: 5px 50px;
+  }

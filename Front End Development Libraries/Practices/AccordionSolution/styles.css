@@ -1,0 +1,52 @@
+body {
+  font-family: sans-serif;
+}
+
+/* border用当前颜色创建了一个点，border width绘画的箭头的两个边
+height和width定义了箭头的长宽，transform使箭头旋转 */
+.accordion-icon {
+  border: solid currentcolor;  
+  border-width: 0 2px 2px 0;
+  height: 8px;
+  width: 8px;
+  transform: translateY(-2px) rotate(45deg);
+  display: inline-block;
+  pointer-events: none;
+  margin-right: 5%;
+}
+
+.accordion-icon--rotated {
+  transform: translateY(2px) rotate(-135deg);
+}
+
+.accordion {
+}
+
+.accordion-item {
+
+}
+
+.accordion-section {
+  cursor: pointer;
+}
+
+.accordion-title {
+  padding: 10px 10px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.accordion-title:hover {
+  background-color: lightgray;
+}
+
+.accordion-content {
+  width: 90%;
+  margin: 10px;
+}
+
+hr {
+  margin: 0;
+  color: lightgray;
+}
